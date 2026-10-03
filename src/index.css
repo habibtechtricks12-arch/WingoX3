@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ck-bg: #061E26;
+    --color-ck-card: #082833;
+    --color-ck-card-hover: #0C3646;
+    --color-ck-border: #114454;
+    --color-ck-orange: #F97316;
+    --color-ck-green: #22C55E;
+    --color-ck-yellow: #FACC15;
+    --color-ck-gold: #FBBF24;
+    --color-ck-cyan: #14B8A6;
+    --color-ck-teal-btn: #0B3340;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #061E26;
+  color: #E2E8F0;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: contain;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #061E26;
+}
+::-webkit-scrollbar-thumb {
+  background: #114454;
+  border-radius: 9999px;
+}
+
+/* Custom marquee */
+@keyframes ckMarquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-ck-marquee {
+  animation: ckMarquee 20s linear infinite;
+}
+
+/* Jackpot ticker shine */
+@keyframes jackpotPulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(250, 204, 21, 0.6), 0 0 20px rgba(234, 179, 8, 0.4); }
+  50% { text-shadow: 0 0 20px rgba(250, 204, 21, 0.9), 0 0 35px rgba(245, 158, 11, 0.7); }
+}
+
+.jackpot-glow {
+  animation: jackpotPulse 2s ease-in-out infinite;
+}
+
+@keyframes marqueeProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+

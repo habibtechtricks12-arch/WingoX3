@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Remix TCG SEA Gaming \u0026 Rewards Dashboard",
+  "description": "Mobile-first gaming, WinGo lottery simulation, invite friends earnings, and member reward center dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
